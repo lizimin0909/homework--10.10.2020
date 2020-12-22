@@ -11,7 +11,7 @@ void print(std::ofstream& toFile, int* M, int l, char ch)
 		x /= 10;
 	}
 
-	std::string s;
+	std::string s; 
 	for (int i = 0; i < 256; i++)
 	{
 		if (((ch == 'Y') ? M[i] > 0:M[i] > -1) && i != 10 && i != 13 && i != 9)
