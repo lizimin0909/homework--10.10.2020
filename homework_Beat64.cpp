@@ -75,7 +75,7 @@ int Base64Decode(char* inStr, int Len, char* outStr) {
 		a1 = ((b1 << 2) | b2 >> 4);
 		outStr[j++] = a1;
 
-		if (b3 != -1)
+		if (b3 >= 0)
 		{
 			a2 = ((b2 & 0x0F) << 4) | (b3 >> 2);
 			outStr[j++] = a2;
